@@ -1,0 +1,44 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/homelin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:padding="8dp"
+		android:background="#42A5F5"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/hometxt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Home"
+			android:textSize="18sp"
+			android:textColor="#FFFFFF"/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/listlin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:padding="8dp"
+		android:background="#42A5F5"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/listyxt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Manga list"
+			android:textSize="18sp"
+			android:textColor="#FFFFFF"/>
+	</LinearLayout>
+</LinearLayout>
