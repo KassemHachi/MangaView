@@ -1,5 +1,5 @@
 # MangaView
-mangaview is an app to show manga websites with multi languages 
+Mangaview is an app to read manga with multi-languages by containing a lot of manga websites
 ## Screenshots :
 <img src="Screens/Main-Screen.png" height="25%" width="25%">
 <img src="Screens/Manga-Website-Screen-1.png" height="25%" width="25%">
