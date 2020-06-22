@@ -1,4 +1,4 @@
-package com.my.newproject8;
+package com.MangaView.MangaViewApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -18,6 +18,7 @@ import android.animation.*;
 import android.view.animation.*;
 import java.util.*;
 import java.text.*;
+import android.widget.ScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ImageView;
@@ -30,11 +31,20 @@ public class MainActivity extends AppCompatActivity {
 	
 	private Toolbar _toolbar;
 	
+	private ScrollView vscroll1;
+	private LinearLayout linear8;
 	private LinearLayout linear1;
 	private LinearLayout linear2;
+	private LinearLayout linear3;
+	private LinearLayout linear5;
 	private TextView textview1;
 	private LinearLayout shqqaalin;
 	private ImageView shqqaaimg;
+	private TextView textview2;
+	private LinearLayout mangahere_lin;
+	private LinearLayout mangakakalot_lin;
+	private ImageView mangahere_img;
+	private ImageView mangakakalot_img;
 	
 	private Intent show_screen = new Intent();
 	@Override
@@ -57,11 +67,20 @@ public class MainActivity extends AppCompatActivity {
 				onBackPressed();
 			}
 		});
+		vscroll1 = (ScrollView) findViewById(R.id.vscroll1);
+		linear8 = (LinearLayout) findViewById(R.id.linear8);
 		linear1 = (LinearLayout) findViewById(R.id.linear1);
 		linear2 = (LinearLayout) findViewById(R.id.linear2);
+		linear3 = (LinearLayout) findViewById(R.id.linear3);
+		linear5 = (LinearLayout) findViewById(R.id.linear5);
 		textview1 = (TextView) findViewById(R.id.textview1);
 		shqqaalin = (LinearLayout) findViewById(R.id.shqqaalin);
 		shqqaaimg = (ImageView) findViewById(R.id.shqqaaimg);
+		textview2 = (TextView) findViewById(R.id.textview2);
+		mangahere_lin = (LinearLayout) findViewById(R.id.mangahere_lin);
+		mangakakalot_lin = (LinearLayout) findViewById(R.id.mangakakalot_lin);
+		mangahere_img = (ImageView) findViewById(R.id.mangahere_img);
+		mangakakalot_img = (ImageView) findViewById(R.id.mangakakalot_img);
 		
 		shqqaalin.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -74,6 +93,34 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View _view) {
 				_manga("شقاع", "https://shqqaa.com", "https://shqqaa.com/manga/", "");
+			}
+		});
+		
+		mangahere_lin.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				_manga("Manga here", "http://www.mangahere.com/", "https://www.mangahere.com/directory/", "http://www.mangahere.com/search?name=");
+			}
+		});
+		
+		mangakakalot_lin.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				_manga("MangaKakalot", "https://mangakakalot.com/", "https://mangakakalot.com/manga_list", "https://mangakakalot.com/search/story/");
+			}
+		});
+		
+		mangahere_img.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				_manga("Manga here", "http://www.mangahere.com/", "https://www.mangahere.com/directory/", "https://www.mangahere.com/search?name=");
+			}
+		});
+		
+		mangakakalot_img.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				_manga("MangaKakalot", "https://mangakakalot.com/", "https://mangakakalot.com/manga_list", "https://mangakakalot.com/search/story/");
 			}
 		});
 	}

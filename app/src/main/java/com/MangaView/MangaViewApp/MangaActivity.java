@@ -1,4 +1,4 @@
-package com.my.newproject8;
+package com.MangaView.MangaViewApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -108,6 +108,7 @@ public class MangaActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View _view) {
 				webview1.loadUrl(getIntent().getStringExtra("SearchLink").concat(txt_search.getText().toString()));
+				txt_search.setText("");
 			}
 		});
 		

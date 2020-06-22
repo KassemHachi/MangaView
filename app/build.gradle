@@ -5,7 +5,7 @@ android {
 	compileSdkVersion 28
 	
 	defaultConfig {
-		applicationId "com.my.newproject8"
+		applicationId "com.MangaView.MangaViewApp"
 		minSdkVersion 21
 		targetSdkVersion 28
 		versionCode 1
